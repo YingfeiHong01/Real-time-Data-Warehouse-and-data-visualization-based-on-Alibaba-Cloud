@@ -16,6 +16,7 @@ one mainly contains the fact tables:
 | total_amount  | Order amount  |   
 | order_status  | Order status  |  
 | user_id       | User id|
+| providence_id | Providence id|
 | payment_way   | Way of payment|
 | out_trade_no  | Payment serial number|
 | create_time | Time when the order is created|
@@ -80,11 +81,11 @@ The other mainly includes the dimension tables:
 | header        | meaning       |
 | ------------- |:-------------:| 
 | id            | Product id    |
-| price     | pProduct price  |   
+| price     | Product price  |   
 | sku_name | User id  |  
 | sku_id   | Product id|
 | sku_name  | Product name|
-| sku_desc | product description|
+| sku_desc | Product description|
 | weight| Product weight|
 | tm_id| Product brand id|
 | category3_id|Product three-level category|
@@ -123,10 +124,13 @@ The other mainly includes the dimension tables:
 
 # 3. Project Architecture
 
+![Big data cloud](https://user-images.githubusercontent.com/89432543/153072347-1765a87d-2aea-49c1-bd4b-5b1fef92fce9.png)
 
 - Relational Database Service(RDS) is a stable and elastic service that can be used to store our data. Here, I use two RDSs, one is to store the whole dataset and the other is to store the dimensional tables.
 - Datahub plays a similar role as Kafka which provides the data queueing function for buffering. Datahub can also distributed the data because it can be connected to various services at AliCloud.
+- Data Transmission Service(DTS) support the data transmission among SQL database, NoSQL database, OLAP and so on. It provides a secure and scalable data schema for asynchronous data transmission.
+- Realtime Compute is a platform build on Apache Flink that provides realtime data processing flow.
+- AnalyticDB is a realtime data warehouse that can procive multi-dimensional data analysis and data exploration
+- DataV provides multiple visualization samples that can help customers quickly get familiar with the visualization tools and create professional visualization applications.
 
-
-# 4. 
-
+# 4. Data 
