@@ -134,4 +134,3 @@ The other mainly includes the dimension tables:
 - AnalyticDB is a realtime data warehouse that can procive multi-dimensional data analysis and data exploration
 - DataV provides multiple visualization samples that can help customers quickly get familiar with the visualization tools and create professional visualization applications.
 
-
