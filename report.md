@@ -9,11 +9,15 @@ Optional 5) Collect the real-time log data
 There are 10 tables in total that are stored in the local MySQL database, including 
 1) Order_infor: 
 
-| header        | meaning       | Cool  |
-| ------------- |:-------------:| -----:|
-| id           | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| header        | meaning       |
+| ------------- |:-------------:| 
+| id            | Order id      |
+| total_amount  | Order amount  |   
+| order_status  | Order status  |  
+| payment_way   | Way of payment|
+| out_trade_no  | number of trade|
+| create_time | the time when the order is created|
+| operate_time| the time when the order is operated|
 
 
 
