@@ -125,8 +125,7 @@ The other mainly includes the dimension tables:
 
 
 # 3. Project Architecture
-
-![Big data cloud](https://user-images.githubusercontent.com/89432543/153072347-1765a87d-2aea-49c1-bd4b-5b1fef92fce9.png)
+![Big data cloud 流程图](https://user-images.githubusercontent.com/89432543/153076731-b732bb28-7d26-4830-a123-66a5854cf45d.png)
 - Relational Database Service(RDS) is a stable and elastic service that can be used to store our data. Here, I use two RDSs, one is to store the whole dataset and the other is to store the dimensional tables.
 - Datahub plays a similar role as Kafka which provides the data queueing function for buffering. Datahub can also distributed the data because it can be connected to various services at AliCloud.
 - Data Transmission Service(DTS) support the data transmission among SQL database, NoSQL database, OLAP and so on. It provides a secure and scalable data schema for asynchronous data transmission.
