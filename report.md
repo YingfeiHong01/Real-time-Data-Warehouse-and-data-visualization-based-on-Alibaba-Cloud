@@ -7,7 +7,8 @@ Optional: Collect the real-time log data
 
 # 2. Data Overview
 There are 10 tables in total that are stored in the RDS and can be divided into two groups.  
-one mainly contains the fact tables:  
+one mainly contains the fact tables: 
+
 (1) Order_infor: 
 
 | header        | meaning       |
@@ -21,7 +22,9 @@ one mainly contains the fact tables:
 | out_trade_no  | Payment serial number|
 | create_time | Time when the order is created|
 | operate_time| Time when the order is operated|  
-(2) Order_detail:  
+
+(2) Order_detail:
+
 | header        | meaning       |
 | ------------- |:-------------:| 
 | id            | Order index    |
@@ -48,9 +51,8 @@ one mainly contains the fact tables:
 |payment_type| Type of payment|
 |payment_time| Time of payment|
 
-
-
 The other mainly includes the dimension tables:
+
 (1) base_category1
 
 | header        | meaning       |
@@ -130,16 +132,13 @@ The other mainly includes the dimension tables:
 - AnalyticDB is a realtime data warehouse that can procive multi-dimensional data analysis and data exploration
 - DataV provides multiple visualization samples that can help customers quickly get familiar with the visualization tools and create professional visualization applications.
 
-The data process and analysis are as follows:
-
+The data process and analysis are as follows:  
 (1) paid_order_detail table
 - Collect the information and details of the orders with completed payment from the order_info tables and order_detail at Datahub
-- Store them in the paid_order_detail table in the Datahub
-
+- Store them in the paid_order_detail table in the Datahub  
 (2) province_stat table
 - Analyse the sales distribution in different provinces and regions from the paid_order_detail table at Datahub and the dimensional tables at RDS
-- Store the result in the province_stat table in the AnalyticDB
-
+- Store the result in the province_stat table in the AnalyticDB  
 (3) sku_stat table
 - Analyse the sales by category from the paid_oder_detail table at Datahub and the dimensional tables at RDS
 - Store the result in the sku_stat table in the AnalyticDB
