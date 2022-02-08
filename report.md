@@ -146,3 +146,6 @@ The data process and analysis are as follows:
 (3) sku_stat table
 - Analyse the sales by category from the paid_oder_detail table at Datahub and the dimensional tables at RDS
 - Store the result in the sku_stat table in the AnalyticDB
+
+# 4. Result Screenshot
+![analysis result](https://user-images.githubusercontent.com/89432543/153076858-50733d99-ec09-445b-bd26-afa22a3aff72.jpg)
