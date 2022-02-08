@@ -8,6 +8,7 @@ Optional 5) Collect the real-time log data
 # 2. Data Overview
 There are 10 tables in total that are stored in the local MySQL database and can be divided into two groups.
 one mainly contains the fact tables:
+
 (1) Order_infor: 
 
       | header        | meaning       |
@@ -68,7 +69,7 @@ The other mainly includes the dimension tables:
     | name     | Secondary category name  |
     | category1_id| Primary category id |
 
-(3)base_category3
+(3) base_category3
 
     | header        | meaning       |
     | ------------- |:-------------:| 
