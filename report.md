@@ -11,13 +11,13 @@ There are 10 tables in total that are stored in the local MySQL database, includ
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | Order index   |
+| id            | Order id      |
 | total_amount  | Order amount  |   
 | order_status  | Order status  |  
 | payment_way   | Way of payment|
 | out_trade_no  | Payment serial number|
-| create_time | the time when the order is created|
-| operate_time| the time when the order is operated|
+| create_time | the time when data is created|
+| operate_time| the time when data is operated|
 
 2 )Order_detail:
 
@@ -26,24 +26,40 @@ There are 10 tables in total that are stored in the local MySQL database, includ
 | id            | order index    |
 | order_id      | Order id  |   
 | user_id | user id  |  
-| sku_id   | product id||
+| sku_id   | product id|
 | sku_name  | product name|
 | order_price | product price|
 | sku_num| number of purchase|
-|create_time| the time when the order is created|
+|create_time| the time when data is created|
 
 3) sku_info:
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | order index    |
-| order_id      | Order id  |   
-| user_id | user id  |  
-| sku_id   | product id||
+| id            | product id    |
+| price     | product price  |   
+| sku_name | user id  |  
+| sku_id   | product id|
+| sku_name  | product name|
+| sku_desc | product description|
+| weight| product weight|
+| tm_id| product brand id|
+|category3_id|product 3rd category|
+|create_time|the time when data is created|
+
+
+4)user_infor:
+| header        | meaning       |
+| ------------- |:-------------:| 
+| id            | user id    |
+| name     | user name  |   
+| birthday | user birthday  |  
+| gender   | user gender|
 | sku_name  | product name|
 | order_price | product price|
 | sku_num| number of purchase|
 |create_time| the time when the order is created|
+
 
 
 
