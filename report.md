@@ -5,5 +5,16 @@
 4) Visualize the result
 Optional 5) Collect the real-time log data
 
-# 2. 
+# 2. Data Overview
+There are 10 tables in total that are stored in the local MySQL database, including 
+1) Order_infor: 
+id	the order id
+total 
+
+
+
+
+Project Architecture
+# 3. Data overview
+# 4. 
 
