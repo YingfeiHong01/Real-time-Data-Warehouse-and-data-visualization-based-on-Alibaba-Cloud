@@ -6,7 +6,7 @@
 Optional: Collect the real-time log data
 
 # 2. Data Overview
-There are 10 tables in total that are stored in the local MySQL database and can be divided into two groups.
+There are 10 tables in total that are stored in the RDS and can be divided into two groups.
 one mainly contains the fact tables:
 
 (1) Order_infor: 
