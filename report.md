@@ -18,36 +18,36 @@ one mainly contains the fact tables:
 | user_id       | User id|
 | payment_way   | Way of payment|
 | out_trade_no  | Payment serial number|
-| create_time | the time when the order is created|
-| operate_time| the time when the order is operated|
+| create_time | Time when the order is created|
+| operate_time| Time when the order is operated|
 
 2 )Order_detail:
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | order index    |
+| id            | Order index    |
 | order_id      | Order id  |   
-| user_id | user id  |  
-| sku_id   | product id|
-| sku_name  | product name|
-| order_price | product price|
-| sku_num| number of purchase|
-| create_time| the time when the order is created|
+| user_id | User id  |  
+| sku_id   | Product id|
+| sku_name  | Product name|
+| order_price | Product price|
+| sku_num| Number of purchase|
+| create_time| Time when the order is created|
 
 
 3) payment_info
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            |payment id  |
-| out_trade_id     | id for out trading   | 
-| order_id|  order id |
-| user_id | user id |
+| id            |Payment id  |
+| out_trade_id     | Payment serial number   | 
+| order_id|  Order id |
+| user_id | User id |
 | alipay_trade_no|  Payment serial number of Alipay|
-|total_amount | total amount|
-|subject| content of the transaction| 
-|payment_type| type of payment|
-|payment_time| time of payment|
+|total_amount | Total amount of payment|
+|subject| Content of the transaction| 
+|payment_type| Type of payment|
+|payment_time| Time of payment|
 
 
 
@@ -56,8 +56,8 @@ The other mainly includes the dimension tables:
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | primary category id  |
-| name     | primary category name  |   
+| id            | Primary category id  |
+| name     | Primary category name  |   
 
 2) base_category2
 
@@ -65,7 +65,7 @@ The other mainly includes the dimension tables:
 | ------------- |:-------------:| 
 | id            | Secondary category id  |
 | name     | Secondary category name  |
-| category1_id| primary category id |
+| category1_id| Primary category id |
 
 3)base_category3
 
@@ -79,48 +79,54 @@ The other mainly includes the dimension tables:
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | product id    |
-| price     | product price  |   
-| sku_name | user id  |  
-| sku_id   | product id|
-| sku_name  | product name|
+| id            | Product id    |
+| price     | pProduct price  |   
+| sku_name | User id  |  
+| sku_id   | Product id|
+| sku_name  | Product name|
 | sku_desc | product description|
-| weight| product weight|
-| tm_id| product brand id|
-| category3_id|product three-level category|
-| create_time|the time when the order is created|
+| weight| Product weight|
+| tm_id| Product brand id|
+| category3_id|Product three-level category|
+| create_time|Time when the order is created|
 
 
 5)user_infor:
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | user id    |
-| name     | user name  |   
-| birthday | user birthday  |  
-| gender   | user gender|
-| email  | user email|
-| user_level | user level|
-| create_time| the time when the order is created|
-| operate_time| the time when the order is operated|
+| id            |  User id    |
+| name     | User name  |   
+| birthday | User birthday  |  
+| gender   | User gender|
+| email  | User email|
+| user_level | User level|
+| create_time| Time when the order is created|
+| operate_time| Time when the order is operated|
 
 6) base_providence
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | providence id    |
-| name     | providence name |   
-| region_id | region_id  |
-|area_code| code of the area|
+| id            | Providence id    |
+| name     | Providence name |   
+| region_id | Region_id  |
+|area_code| Code of the area|
 
 7) base_region
 
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | region id   |
-| name     | region name |   
+| id            | Region id   |
+| name     | Region name |   
 
 
 # 3. Project Architecture
+
+
+- Relational Database Service(RDS) is a stable and elastic service that can be used to store our data. Here, I use two RDSs, one is to store the whole dataset and the other is to store the dimensional tables.
+- Datahub plays a similar role as Kafka which provides the data queueing function for buffering. Datahub can also distributed the data because it can be connected to various services at AliCloud.
+
+
 # 4. 
 
