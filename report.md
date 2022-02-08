@@ -11,7 +11,7 @@ There are 10 tables in total that are stored in the local MySQL database, includ
 
 | header        | meaning       | Cool  |
 | ------------- |:-------------:| -----:|
-| id            | right-aligned | $1600 |
+| id           | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
