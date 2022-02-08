@@ -6,10 +6,8 @@
 Optional: Collect the real-time log data
 
 # 2. Data Overview
-There are 10 tables in total that are stored in the RDS and can be divided into two groups.
-
-one mainly contains the fact tables:
-
+There are 10 tables in total that are stored in the RDS and can be divided into two groups.  
+one mainly contains the fact tables:  
 (1) Order_infor: 
 
 | header        | meaning       |
@@ -22,10 +20,8 @@ one mainly contains the fact tables:
 | payment_way   | Way of payment|
 | out_trade_no  | Payment serial number|
 | create_time | Time when the order is created|
-| operate_time| Time when the order is operated|
-
-(2) Order_detail:
-
+| operate_time| Time when the order is operated|  
+(2) Order_detail:  
 | header        | meaning       |
 | ------------- |:-------------:| 
 | id            | Order index    |
