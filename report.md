@@ -3,7 +3,7 @@
 - Clean and transform the data
 - Store the data into Analytics database
 - Visualize the result
-Optional 5) Collect the real-time log data
+Optional: Collect the real-time log data
 
 # 2. Data Overview
 There are 10 tables in total that are stored in the local MySQL database and can be divided into two groups.
