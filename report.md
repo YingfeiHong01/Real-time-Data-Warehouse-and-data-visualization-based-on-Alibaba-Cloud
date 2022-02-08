@@ -133,12 +133,15 @@ The other mainly includes the dimension tables:
 - DataV provides multiple visualization samples that can help customers quickly get familiar with the visualization tools and create professional visualization applications.
 
 The data process and analysis are as follows:  
+
 (1) paid_order_detail table
 - Collect the information and details of the orders with completed payment from the order_info tables and order_detail at Datahub
 - Store them in the paid_order_detail table in the Datahub 
+
 (2) province_stat table
 - Analyse the sales distribution in different provinces and regions from the paid_order_detail table at Datahub and the dimensional tables at RDS
 - Store the result in the province_stat table in the AnalyticDB 
+
 (3) sku_stat table
 - Analyse the sales by category from the paid_oder_detail table at Datahub and the dimensional tables at RDS
 - Store the result in the sku_stat table in the AnalyticDB
