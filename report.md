@@ -8,8 +8,11 @@ Optional 5) Collect the real-time log data
 # 2. Data Overview
 There are 10 tables in total that are stored in the local MySQL database, including 
 1) Order_infor: 
-id	the order id
-total 
+| header        | meaning       | Cool  |
+| ------------- |:-------------:| -----:|
+| id    | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 
