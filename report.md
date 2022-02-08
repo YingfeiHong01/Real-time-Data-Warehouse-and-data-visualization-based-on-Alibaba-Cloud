@@ -11,14 +11,39 @@ There are 10 tables in total that are stored in the local MySQL database, includ
 
 | header        | meaning       |
 | ------------- |:-------------:| 
-| id            | Order id      |
+| id            | Order index   |
 | total_amount  | Order amount  |   
 | order_status  | Order status  |  
 | payment_way   | Way of payment|
-| out_trade_no  | number of trade|
+| out_trade_no  | Payment serial number|
 | create_time | the time when the order is created|
 | operate_time| the time when the order is operated|
 
+2 )Order_detail:
+
+| header        | meaning       |
+| ------------- |:-------------:| 
+| id            | order index    |
+| order_id      | Order id  |   
+| user_id | user id  |  
+| sku_id   | product id||
+| sku_name  | product name|
+| order_price | product price|
+| sku_num| number of purchase|
+|create_time| the time when the order is created|
+
+3) sku_info:
+
+| header        | meaning       |
+| ------------- |:-------------:| 
+| id            | order index    |
+| order_id      | Order id  |   
+| user_id | user id  |  
+| sku_id   | product id||
+| sku_name  | product name|
+| order_price | product price|
+| sku_num| number of purchase|
+|create_time| the time when the order is created|
 
 
 
